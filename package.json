@@ -6,8 +6,16 @@
   "scripts": {},
   "keywords": [],
   "author": "Roman Lakhtadyr <roman.lakhtadyr@gmail.com>",
-  "dependencies": {},
+  "dependencies": {
+    "fp-ts": "^2.9.3",
+    "io-ts": "^2.2.13",
+    "ioredis": "^4.19.4",
+    "webtorrent": "^0.112.1"
+  },
   "devDependencies": {
+    "@types/ioredis": "^4.19.2",
+    "@types/node": "^14.14.22",
+    "@types/webtorrent": "^0.109.0",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "eslint": "^7.18.0",
