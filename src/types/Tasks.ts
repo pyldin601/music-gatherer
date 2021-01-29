@@ -12,8 +12,11 @@ const GetRecentScrobbles = t.type({
       title: t.string,
       date: t.string,
     }))
+  }),
+  state: t.type({
+    
   })
-})
+}, 'GetRecentScrobbles')
 
 const LoginToRutrackerOrg = t.type({
   type: t.literal('LOGIN_TO_RUTRACKER_ORG'),
@@ -23,8 +26,9 @@ const LoginToRutrackerOrg = t.type({
   }),
   output: t.type({
     bb_session: t.string,
-  })
-})
+  }),
+  state: t.type({})
+}, 'LoginToRutrackerOrg')
 
 
 const SearchAtRutrackerOrg = t.type({
@@ -39,8 +43,9 @@ const SearchAtRutrackerOrg = t.type({
       name: t.string,
       id: t.string
     }))
-  })
-})
+  }),
+  state: t.type({})
+}, 'SearchAtRutrackerOrg')
 
 const DownloadTorrentFileFromRutrackerOrg = t.type({
   type: t.literal('DOWNLOAD_TORRENT_FILE_FROM_RUTRACKER_ORG'),
@@ -50,8 +55,9 @@ const DownloadTorrentFileFromRutrackerOrg = t.type({
   output: t.type({
     file: t.string,
     content: t.array(t.string)
-  })
-})
+  }),
+  state: t.type({})
+}, 'DownloadTorrentFileFromRutrackerOrg')
 
 const DownloadTorrent = t.type({
   type: t.literal('DOWNLOAD_TORRENT'),
@@ -60,8 +66,9 @@ const DownloadTorrent = t.type({
     path: t.string
   }),
   output: t.type({
-  })
-})
+  }),
+  state: t.type({})
+}, 'DownloadTorrent')
 
 const UploadToMusicloud = t.type({
   type: t.literal('UPLOAD_TO_MUSICLOUD'),
@@ -70,8 +77,9 @@ const UploadToMusicloud = t.type({
   }),
   output: t.type({
     ids: t.array(t.string)
-  })
-})
+  }),
+  state: t.type({})
+}, 'UploadToMusicloud')
 
 export const Tasks = t.union([
   GetRecentScrobbles,

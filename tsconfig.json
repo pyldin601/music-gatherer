@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
     "lib": [
       "es5",
       "es2019.array",
